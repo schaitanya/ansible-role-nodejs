@@ -1,6 +1,6 @@
 ---
 - name: Ensure apt-transport-https is installed.
-  apt: name=apt-transport-https state=present
+  apt: name=apt-transport-https state=present update_cache=yes
 
 - name: Add Nodesource apt key.
   apt_key:
